@@ -16,5 +16,5 @@ test('gets correct part one sample answer', () => {
 });
 
 test('gets correct part two sample answer', () => {
-  // expect(partTwo(formatInput(partOneInput))).toBe();
+  expect(partTwo(formatInput(partOneInput))).toBe(5);
 });

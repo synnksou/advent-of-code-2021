@@ -8,4 +8,10 @@ export const partOne = (input: number[]): any => {
   }, 0);
 };
 
-export const partTwo = () => {};
+ export const partTwo = (input: number[]): number => {
+  return input.reduce((prev, curr, index, array): any => {
+    const currSum = curr + array[index + 1] + array[index + 2];
+    const nextSum = array[index + 1] + array[index + 2] + array[index + 3];
+    return Boolean(currSum < nextSum) ? prev + 1 : prev;
+  },0);
+};
